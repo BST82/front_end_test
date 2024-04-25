@@ -5,10 +5,13 @@ const backgroundImages = [
     './assets/couple3.jpg'
 ];
 
+
 // Current index of the displayed background image
 let currentIndex = 0;
 
-// Function to change the background image
+
+
+// Function to change the background image for header section
 function changeBackground(direction) {
     // If direction is 'next', increment currentIndex; if 'prev', decrement it
     if (direction === 'next') {
@@ -23,7 +26,6 @@ function changeBackground(direction) {
     // Set the background image of the container
     container.style.backgroundImage = `url('${backgroundImages[currentIndex]}')`;
 }
-
 // Add event listeners to the left and right buttons
 document.querySelector('.btn-primary[data-direction="prev"]').addEventListener('click', function() {
     changeBackground('prev');
@@ -33,7 +35,7 @@ document.querySelector('.btn-primary[data-direction="next"]').addEventListener('
     changeBackground('next');
 });
 
-// Automatic sliding functionality
-setInterval(function() {
-    changeBackground('next');
-}, 3000); // Slide every 3 seconds
+
+
+
+// js code for slider

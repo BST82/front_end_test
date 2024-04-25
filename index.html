@@ -1,134 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front End Test</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</head>
-<body>
-    
-  
-<!-- Hero Section start -->
-<div class="container-fluid background-image py-4">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand text-white" href="#">dineshgahl.com</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            portfolio
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">contact</a>
-                    </li>
-                </ul>
+</head>
+
+<body>
+
+
+    <!-- Hero Section start -->
+    <div class="container-fluid background-image py-4">
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#">dineshgahl.com</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                portfolio
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- heading and button -->
+        <div class="carousel-caption d-md-block">
+            <h1 class="display-6 font-weight-bold text-white mt-5">Photography For Adventurous Souls & Rebels At Heart
+            </h1>
+            <input class="btn align-items-center btn-light font-weight-bold" type="submit" value="Submit">
+        </div>
+        <!-- Separator -->
+        <hr class="section-title-hr">
+        <!-- Left and Right Buttons -->
+        <div class="row justify-content-center ">
+            <div class="col-12 col-lg-auto">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"
+                            onclick="changeBackground('prev')"></span>
+                        <span class="visually-hidden" onclick="changeBackground('prev')">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next" onclick="changeBackground('next')">
+                        <span class="carousel-control-next-icon" aria-hidden="true"
+                            onclick="changeBackground('next')"></span>
+                        <span class="visually-hidden" onclick="changeBackground('next')">Next</span>
+                    </button>
+
             </div>
         </div>
-    </nav>
-
-    <!-- heading and button -->
-    <div class="carousel-caption d-md-block">
-        <h1 class="display-6 font-weight-bold text-white mt-5">Photography For Adventurous Souls & Rebels At Heart</h1>
-        <input class="btn align-items-center btn-light font-weight-bold" type="submit" value="Submit">
     </div>
-   <!-- Separator -->
-   <hr class="section-title-hr">
-    <!-- Left and Right Buttons -->
-    <div class="row justify-content-center ">
-        <div class="col-12 col-lg-auto">
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" >
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" >
-                <span class="carousel-control-prev-icon" aria-hidden="true" onclick="changeBackground('prev')"></span>
-                <span class="visually-hidden" onclick="changeBackground('prev')">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" onclick="changeBackground('next')">
-                <span class="carousel-control-next-icon" aria-hidden="true" onclick="changeBackground('next')"></span>
-                <span class="visually-hidden" onclick="changeBackground('next')">Next</span>
-            </button>
-           
-        </div>
-    </div>
-</div>
-<!-- Hero Section end -->
 
-<!-- image gallery section start  -->
-<!-- Gallery -->
-<div class="container mt-5">
-    
-    <div class="row">
-        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-            <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                class="w-100 shadow-1-strong rounded mb-4 grow-on-hover"
-                alt="Boat on Calm Water"
-            />
-    
-            <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-                class="w-100 shadow-1-strong rounded mb-4 grow-on-hover"
-                alt="Wintry Mountain Landscape"
-            />
-        </div>
-    
-        <div class="col-lg-4 mb-4 mb-lg-0">
-            <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-                class="w-100 shadow-1-strong rounded mb-4 grow-on-hover"
-                alt="Mountains in the Clouds"
-            />
-    
-            <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                class="w-100 shadow-1-strong rounded mb-4 grow-on-hover"
-                alt="Boat on Calm Water"
-            />
-        </div>
-    
-        <div class="col-lg-4 mb-4 mb-lg-0">
-            <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-                class="w-100 shadow-1-strong rounded mb-4 grow-on-hover"
-                alt="Waves at Sea"
-            />
-    
-            <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-                class="w-100 shadow-1-strong rounded mb-4 grow-on-hover"
-                alt="Yosemite National Park"
-            />
+
+    <!-- image gallery section start  -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                    class="w-100 shadow-1-strong rounded mb-4 grow-on-hover" alt="Boat on Calm Water" />
+
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                    class="w-100 shadow-1-strong rounded mb-4 grow-on-hover" alt="Wintry Mountain Landscape" />
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+                    class="w-100 shadow-1-strong rounded mb-4 grow-on-hover" alt="Mountains in the Clouds" />
+
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                    class="w-100 shadow-1-strong rounded mb-4 grow-on-hover" alt="Boat on Calm Water" />
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                    class="w-100 shadow-1-strong rounded mb-4 grow-on-hover" alt="Waves at Sea" />
+
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                    class="w-100 shadow-1-strong rounded mb-4 grow-on-hover" alt="Yosemite National Park" />
+            </div>
         </div>
     </div>
-    
 
-</div>
+    <div class="container mb-5 px-lg-4">
+        <div class="row">
+            <div class="col">
+                <h1>Hello B</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sequi earum consequuntur dolorum iusto. Rem illo voluptates maiores tempore commodi voluptatum aliquam dolores eos exercitationem deleniti deserunt possimus asperiores, doloremque accusamus! Itaque quam inventore amet expedita maiores voluptate tempora harum?</p>
+            </div>
+            <div class="col image-container rounded" id="imageDisplay">
+                <!-- Image will be loaded here -->
+            </div>
+            <div class="w-100"></div>
+            <div class="col ">
+            </div>
+            <div class="col rounded">
+                <a class="text-black btn btn-outline-dark me-2 mb-2 mb-md-0 grow-on-hover" role="button" data-slide="prev" id="changeImageBtn">
+                    <span >
+                        <img src="./assets/left.png" alt="" srcset="" class="left-image ">
+                    </span> <!-- Bootstrap left arrow icon -->
+                </a>
+                <a class="text-black btn btn-outline-dark me-2 mb-2 mb-md-0 grow-on-hover" role="button" data-slide="next" id="changeImageBtn2">
+                    <span >
+                        <img src="./assets/right.png" alt="" srcset="" class="right-image ">
+                    </span> <!-- Bootstrap right arrow icon -->
+                </a>
+            </div>
+        </div>
 
-  <!-- Gallery -->
-    
-    
-    <script src="script.js"></script>
+
+
+
+     
+        
+        <script src="script.js"></script>
+        <script src="test_monial_slider.js"></script>
 </body>
+
 </html>
