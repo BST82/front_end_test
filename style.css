@@ -33,20 +33,20 @@
 }
 
 /* Media query for small to medium devices */
-@media (max-width: 380px) {
+@media (min-width: 320px) and (max-width: 405px){
   #changeImageBtn,
   #changeImageBtn2 {
-    margin-top: 5px; 
+    margin-top: -395px; 
     margin-right: -5px;
     margin-left: 5px; 
     font-size: 10px; /* Adjust font size for small devices */
   }
 }
-@media (min-width: 340px) and (max-width: 520px) {
+@media (min-width: 340px) and (max-width: 525px) {
   #changeImageBtn,
   #changeImageBtn2 {
     
-      margin-top: 15px; 
+      margin-top: -170px; 
       margin-right: 1rem; 
       margin-left: 1rem; 
   }
@@ -54,7 +54,7 @@
 @media (min-width: 517px) and (max-width: 767px) {
   #changeImageBtn,
   #changeImageBtn2 {
-      margin-top: 15px; 
+      margin-top: -115px; 
       margin-right: 1rem; 
       margin-left: 3rem; 
   }
@@ -62,10 +62,10 @@
 }
 
 /* Media query for large devices */
-@media (min-width: 788px) {
+@media (min-width: 770px) and (max-width: 1000px){
   #changeImageBtn,
   #changeImageBtn2 {
-    margin-top: 15px; 
+    margin-top: -15px; 
       margin-right: 5rem; /* Increase the gap between buttons for large devices */
   }
 
@@ -82,12 +82,70 @@
     margin-top: 15px; 
       margin-right: 5rem; /* Increase the gap between buttons for extra-large devices */
   }
-
-  #changeImageBtn {
+ #changeImageBtn {
       margin-left: 195px; /* Adjust the left margin for extra-large devices */
   }
 }
 .right-image ,.left-image{
   width: 20px;
   height: 20px;
+}
+
+/* image and text section */
+.background-image-with-text{
+  background-image: url('./assets/couple.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 90vh; 
+}
+.spacing-text-image{
+  padding-top: 12rem;
+}
+
+/* slider images css */
+#myCarousel {
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item>div {
+      display: none;
+  }
+
+  .carousel-inner .carousel-item>div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-item-next:not(.carousel-item-start) {
+      transform: translateX(25%) !important;
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-item-prev:not(.carousel-item-end),
+  .active.carousel-item-start,
+  .carousel-item-prev:not(.carousel-item-end) {
+      transform: translateX(-25%) !important;
+  }
+
+  .carousel-item-next.carousel-item-start,
+  .active.carousel-item-end {
+      transform: translateX(0) !important;
+  }
+
+  .carousel-inner .carousel-item-prev,
+  .carousel-item-prev:not(.carousel-item-end) {
+      transform: translateX(-25%) !important;
+  }
 }

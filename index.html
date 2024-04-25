@@ -21,7 +21,7 @@
     <div class="container-fluid background-image py-4">
 
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container">
                 <a class="navbar-brand text-white" href="#">dineshgahl.com</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -121,8 +121,8 @@
     <div class="container mb-5 px-lg-4">
         <div class="row">
             <div class="col">
-                <h1>Hello B</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sequi earum consequuntur dolorum iusto. Rem illo voluptates maiores tempore commodi voluptatum aliquam dolores eos exercitationem deleniti deserunt possimus asperiores, doloremque accusamus! Itaque quam inventore amet expedita maiores voluptate tempora harum?</p>
+                <h1 class="display-4 mb-lg-5">Testimonial</h1>
+                <p class="pt-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sequi earum consequuntur dolorum iusto. Rem illo voluptates maiores tempore commodi voluptatum aliquam dolores eos exercitationem deleniti deserunt possimus asperiores, doloremque accusamus! Itaque quam inventore amet expedita maiores voluptate tempora harum?</p>
             </div>
             <div class="col image-container rounded" id="imageDisplay">
                 <!-- Image will be loaded here -->
@@ -143,13 +143,103 @@
                 </a>
             </div>
         </div>
+    </div>
 
-
-
-
+<!-- Text and Full width image section  -->
+    <div class="container-fluid background-image-with-text mb-5">
+        <h1 class="text-center display-6 text-white spacing-text-image">
+            Do it Your Way.<br>Elop in Your<br>Dream Location
+        </h1>
+    </div>
      
-        
+
+<!-- Text and button container -->
+<div class="container text-center mb-5">
+    <div class="mx-auto w-50">
+        <h1 class="display-6 text-black">
+            Pacific Northwest or Anywhere Beyond
+        </h1>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sed officiis nihil adipisci sit harum vitae cum quam quod maiores nostrum atque id dignissimos consequuntur corporis molestiae, laudantium error, sint pariatur facilis iusto quasi nisi sequi quisquam. Consequuntur modi repellendus culpa quod? Iure, est dolores eos corporis nobis dolor! Dolor!</p>
+        <button type="button" class="btn btn-dark">Explore</button>
+    </div>
+</div>
+
+<!-- slider with image -->
+<div id="myCarousel" class="carousel slide container mb-5" data-bs-ride="carousel">
+    <div class="carousel-inner w-100">
+        <div class="carousel-item active h-100">
+            <div class="col-md-3 ">
+                <div class="card card-body">
+                    <img class="img-fluid" src="./assets/back-original.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="col-md-3">
+                <div class="card card-body">
+                    <img class="img-fluid" src="./assets/background.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="col-md-3">
+                <div class="card card-body">
+                    <img class="img-fluid" src="./assets/ai.png">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="col-md-3">
+                <div class="card card-body">
+                    <img class="img-fluid" src="https://pixabay.com/photos/royal-gramma-basslet-purple-fish-8012082/">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="col-md-3">
+                <div class="card card-body">
+                    <img class="img-fluid" src="https://pixabay.com/photos/shoes-footwear-leather-apparel-2425122/">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="col-md-3">
+                <div class="card card-body">
+                    <img class="img-fluid" src="https://via.placeholder.com/640x360?text=6">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="col-md-3">
+                <div class="card card-body">
+                    <img class="img-fluid" src="https://via.placeholder.com/640x360?text=7">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="col-md-3">
+                <div class="card card-body">
+                    <img class="img-fluid" src="https://via.placeholder.com/640x360?text=8">
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
         <script src="script.js"></script>
+        <script src="slider_image.js"></script>
         <script src="test_monial_slider.js"></script>
 </body>
 
