@@ -1,6 +1,6 @@
 /* Define CSS variables */
 :root {
-  --hero-section-slider-bottom-right-redious:20%;
+  --hero-section-slider-bottom-right-redious:35%;
   --hero-section-bg-image: url('./assets/couple.jpg');
   --nav-bar-text-decoration-color:rgb(43, 62, 55);
   --nav-bar-email-gradient-color:linear-gradient(45deg, #0d0e0d, #b9bbc4);
