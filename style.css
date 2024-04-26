@@ -1,35 +1,78 @@
+/* Define CSS variables */
+:root {
+  --hero-section-slider-bottom-right-redious:20%;
+  --hero-section-bg-image: url('./assets/couple.jpg');
+  --nav-bar-text-decoration-color:rgb(43, 62, 55);
+  --nav-bar-email-gradient-color:linear-gradient(45deg, #0d0e0d, #b9bbc4);
+  --hero-box-shadow:rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+   --text-image-slider:rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+
+/* hero section css */
 .background-image {
-    background-image: url('./assets/couple.jpg'); 
+    box-shadow:var(--hero-box-shadow);
+    background-image:var(--hero-section-bg-image); 
     background-size: cover; 
     background-position: center; 
     height: 100vh; 
+    border-bottom-right-radius: var(--hero-section-slider-bottom-right-redious);
   }
+  /* gradient text email */
+  .gradient-text{
+    background: var(--nav-bar-email-gradient-color); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    font-weight: bold;
+  }
+  /* nav text menu hover effect */
+  .custon_nav_css .custom_link{
+    transition: all 0.3s ease;
+    text-decoration-color:var(--nav-bar-text-decoration-color);
+  }
+  .custon_nav_css .custom_link:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-color:var(--nav-bar-text-decoration-color);
+    text-underline-offset: 12px;
+    text-decoration-thickness: 5px;
+}
+/* hero button style */
+.btn-hover-effect{
+  font-weight: bold !important;
+  color: whitesmoke !important;
+}
+/* hero btn hover effect */
+.btn-hover-effect:hover{
+  background-color: black !important;
+}
+
+/* image gallery section css */
   .grow-on-hover {
     transition: transform 0.3s ease;
 }
 
 .grow-on-hover:hover {
     transform: scale(1.1);
-    border: 2px solid black;
+    border: 3px solid black;
 }
 
-/* Slider Css start  */
+/* Testmonial Slider Css start  */
 .image-container {
   background-image: url('./assets/couple.jpg'); 
   background-size: cover; 
   background-position: center;
-
-  width: 100%; /* Adjust the width as needed */
-  overflow: hidden; /* Hide any overflow */
-  height: 50vh;
+ box-shadow: var(--text-image-slider);
 }
-
 .image-container img {
   background-size: cover; 
   background-position: center;
   width: 100%;; /* Make the image fill its container */
   height: auto; /* Maintain aspect ratio */
   height: 50vh;
+}
+.testemonial-heading{
+  
 }
 
 /* Media query for small to medium devices */
@@ -41,6 +84,7 @@
     margin-left: 5px; 
     font-size: 10px; /* Adjust font size for small devices */
   }
+ 
 }
 @media (min-width: 340px) and (max-width: 525px) {
   #changeImageBtn,
@@ -84,6 +128,13 @@
   }
  #changeImageBtn {
       margin-left: 195px; /* Adjust the left margin for extra-large devices */
+  }
+  .large-nav-text{
+    font-size: 1.2rem!important;
+    font-family: cursive;
+  }
+  .hero-heading{
+    font-weight: bold!important;
   }
 }
 .right-image ,.left-image{
@@ -148,4 +199,15 @@
   .carousel-item-prev:not(.carousel-item-end) {
       transform: translateX(-25%) !important;
   }
+}
+
+/* Quotes text section  */
+.quotes_text{
+  font-family: cursive;
+  font-size: 1.3rem;
+
+}
+.icon-widths{
+  width: 3rem;
+  height: 3rem;
 }
