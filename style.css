@@ -6,6 +6,10 @@
   --nav-bar-email-gradient-color:linear-gradient(45deg, #0d0e0d, #b9bbc4);
   --hero-box-shadow:rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
    --text-image-slider:rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+   --box-shadow-for-full-width-image-text:rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+   --color-for-only-image: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+   --color-for-image-container:rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+   --last-image:rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 
@@ -71,34 +75,68 @@
   height: auto; /* Maintain aspect ratio */
   height: 50vh;
 }
-.testemonial-heading{
-  
+
+ /* Text and Full width image section Css  */
+.background-image-with-text{
+  box-shadow: var( --box-shadow-for-full-width-image-text);
 }
+
+/* Heading  Text and button container  */
+.pacific-heading{
+  background: var(--nav-bar-email-gradient-color); 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  font-weight: bold !important;
+}
+.attractive-btn {
+  background-color: #343a40; 
+  color: #fff; 
+  font-weight: bold !important;
+  border: 2px solid #343a40; 
+  border-radius: 30px; 
+  transition: all 0.3s ease; 
+}
+
+.attractive-btn:hover {
+  background-color: #212529; 
+  border-color: #212529; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+
 
 /* Media query for small to medium devices */
 @media (min-width: 320px) and (max-width: 405px){
   #changeImageBtn,
   #changeImageBtn2 {
-    margin-top: -395px; 
-    margin-right: -5px;
-    margin-left: 5px; 
-    font-size: 10px; /* Adjust font size for small devices */
+    margin-top: 15px; 
+  }
+  #changeImageBtn{
+margin-left: 2.5rem;
+  }
+  .left-image,.right-image{
+    width: 10px !important;
+    height: 10px !important;
   }
  
 }
-@media (min-width: 340px) and (max-width: 525px) {
+@media (min-width: 405px) and (max-width: 515px) {
   #changeImageBtn,
   #changeImageBtn2 {
-    
-      margin-top: -170px; 
-      margin-right: 1rem; 
-      margin-left: 1rem; 
+    margin-top: 15px; 
+  }
+  #changeImageBtn{
+    margin-left: 3rem;
+  }
+  #changeImageBtn2{
+  margin-left: 20px;
   }
 }
-@media (min-width: 517px) and (max-width: 767px) {
+
+@media (min-width: 515px) and (max-width: 767px) {
   #changeImageBtn,
   #changeImageBtn2 {
-      margin-top: -115px; 
+      margin-top:10px; 
       margin-right: 1rem; 
       margin-left: 3rem; 
   }
@@ -106,11 +144,11 @@
 }
 
 /* Media query for large devices */
-@media (min-width: 770px) and (max-width: 1000px){
+@media (min-width: 767px) and (max-width: 992px){
   #changeImageBtn,
   #changeImageBtn2 {
-    margin-top: -15px; 
-      margin-right: 5rem; /* Increase the gap between buttons for large devices */
+    margin-top: 15px; 
+    margin-left: 5rem; 
   }
 
   #changeImageBtn {
@@ -120,11 +158,11 @@
 }
 
 /* Media query for extra-large devices */
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   #changeImageBtn,
   #changeImageBtn2 {
     margin-top: 15px; 
-      margin-right: 5rem; /* Increase the gap between buttons for extra-large devices */
+      /* Increase the gap between buttons for extra-large devices */
   }
  #changeImageBtn {
       margin-left: 195px; /* Adjust the left margin for extra-large devices */
@@ -142,6 +180,18 @@
   height: 20px;
 }
 
+@media (min-width: 1300px) {
+  #changeImageBtn,
+  #changeImageBtn2 {
+    margin-top: 35px; 
+
+  }
+  #changeImageBtn2 {
+    margin-left: 4rem;
+      /* Increase the gap between buttons for extra-large devices */
+  }
+}
+
 /* image and text section */
 .background-image-with-text{
   background-image: url('./assets/couple.jpg'); 
@@ -151,6 +201,7 @@
 }
 .spacing-text-image{
   padding-top: 12rem;
+  font-family: cursive;
 }
 
 /* slider images css */
@@ -210,4 +261,60 @@
 .icon-widths{
   width: 3rem;
   height: 3rem;
+}
+
+/* image text heading */
+.imageshadoweffect{
+  box-shadow: var(--text-image-slider);
+}
+
+/* overlap container section */
+
+.scroll-container {
+  box-shadow: var(--color-for-image-container);
+  background-color: #000000;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 20px;
+  border-top-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+
+.scroll-outer {
+  overflow-x: auto;
+  border-radius: 20px;
+}
+
+.scroll-content {
+  white-space: nowrap;
+}
+
+.scroll-content img {
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Style for the horizontal scrollbar */
+.scroll-outer::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+/* Track */
+.scroll-outer::-webkit-scrollbar-track {
+  background: transparent; /* Transparent background */
+}
+
+/* Handle */
+.scroll-outer::-webkit-scrollbar-thumb {
+  background: rgb(60, 57, 65); /* Red color for the scrollbar handle */
+  border-radius: 20px; /* Rounded corners */
+}
+
+/* Handle on hover */
+.scroll-outer::-webkit-scrollbar-thumb:hover {
+  background: rgb(192, 192, 192 ); /* Dark red color on hover */
+}
+
+.last-section{
+box-shadow: var(--last-image);
 }
