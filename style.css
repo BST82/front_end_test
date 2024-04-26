@@ -10,6 +10,7 @@
    --color-for-only-image: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
    --color-for-image-container:rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
    --last-image:rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+   --left-right-button-h-w:5px;
 }
 
 
@@ -57,7 +58,7 @@
 }
 
 .grow-on-hover:hover {
-    transform: scale(1.1);
+    transform: scale(.9);
     border: 3px solid black;
 }
 
@@ -115,8 +116,8 @@
 margin-left: 2.5rem;
   }
   .left-image,.right-image{
-    width: 5px !important;
-    height: 5px !important;
+    width: var(--left-right-button-h-w) !important;
+    height: var(--left-right-button-h-w) !important;
   }
  
 }
@@ -130,6 +131,10 @@ margin-left: 2.5rem;
   }
   #changeImageBtn2{
   margin-left: 20px;
+  }
+  .left-image,.right-image{
+    width: var(--left-right-button-h-w) !important;
+    height: var(--left-right-button-h-w) !important;
   }
 }
 
